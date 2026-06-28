@@ -3,11 +3,14 @@ import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 function WorkCard({ image, title, link, linkType, description }) {
 
-  // go to {link} when .card-wrapper is clicked
-
   const navigate = useNavigate();
-  const handleClick = () => {
-    //go to the link
+  const handleClick = (event) => {
+    // fire the event except when the user clicks on the link itself
+
+    const target = event.target;
+    if (target.closest("a")) return;
+
+
     if (link) {
       if (linkType === "external") {
         window.open(link, "_self");
@@ -32,9 +35,6 @@ function WorkCard({ image, title, link, linkType, description }) {
                 <span className="external-link-icon" aria-hidden="true"> ⎘</span>
                 <span className="sr-only"> (external link)</span>
               </a>
-
-
-
 
             ) : (
               <NavLink to={link} className="card-title">

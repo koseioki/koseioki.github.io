@@ -5,7 +5,10 @@ import './Cards.css';
 function CaseCard({ caseItem }) {
     const path = `/ux-design-cases/${caseItem.slug}`;
     const navigate = useNavigate();
-    const handleClick = () => {
+    const handleClick = (event) => {
+        const target = event.target;
+        if (target.closest("a")) return;
+
         if (path) {
             navigate(path);
         } else {
