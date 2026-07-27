@@ -5,6 +5,4 @@
     max-width: 40rem;
 }
 
-.note-container .bulleted-list li::marker {
-    /* color: var(--warning-dark); */
-}
+
