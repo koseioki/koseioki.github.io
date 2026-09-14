@@ -198,3 +198,20 @@ a:focus-visible {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
+
+.involved-organisations ul {
+  list-style: none;
+  padding: 0;  
+}
+.involved-organisations li,
+.involved-organisations a {
+  /* margin-bottom: 1rem; */
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.involved-organisations img {
+  width: 100%;
+  max-width: 3rem;
+  /* border-radius: 0.25rem; */
+}
