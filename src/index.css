@@ -205,7 +205,6 @@ a:focus-visible {
 }
 .involved-organisations li,
 .involved-organisations a {
-  /* margin-bottom: 1rem; */
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -213,5 +212,14 @@ a:focus-visible {
 .involved-organisations img {
   width: 100%;
   max-width: 3rem;
+  height: auto;
   /* border-radius: 0.25rem; */
+}
+
+@media (max-width: 600px) {
+  .involved-organisations li{
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+  }
 }

@@ -72,7 +72,7 @@ function Home() {
             I&apos;m also certified as an IAAP Certified Professional in Accessibility
             Core Competencies (CPACC).
           </p>
-          <img src={Kosei} alt="a selfie of a man, styled short hair and wearing a black windbreaker, smiling, photo" />
+          <img src={Kosei} alt="a selfie of a man, wearing a black hat, neck wamer and down jacket, smiling, photo" />
 
           <h3>You can find me on</h3>
           <ul>
