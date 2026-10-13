@@ -10,7 +10,7 @@ function Header() {
         <NavLink to="#main-content">Skip to Content</NavLink>
       </div>
       <header>
-        <NavLink to="/">Kosei&#39;s digital work</NavLink>
+        <NavLink to="/">Kosei&#39;s Digital Work</NavLink>
 
       </header>
     </>
